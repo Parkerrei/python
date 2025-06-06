@@ -1,0 +1,174 @@
+""" Get is usually used as an http request to access a data in a websites
+tcp(transport control protocol)built on top of ip(internet protocol)
+A socket or network socket is an endpoint of a bidirection inter-process 
+communication flow across an internet protocol-based computer network,such as the internet.
+A socket is identified by a port number concatenated by a port number.
+the server waits for incoming client request by listening to a spefied port.Once a request is 
+received,the server accepts a connection from the client socket to complete the connection.
+https/http are stateless,unidirectional,half-duplex
+websockets are stateful,bidirectional,full-duplex
+tcp port numbers // a port is an application-specific or process-specific software communication
+endpoint.it allows multiple networked applications to coexist on the same server.
+ 
+ there is a list of well-known tcp port numbers.
+ common tcp ports------///
+ telnet(23) - login
+ ssh(22) - secure login
+ http(80)
+ https(443) - secure
+ smtp(25)(mail)
+ imap(143/220/993) - mail retrieval
+ pop(109/110) - mail retrieval 
+ dns(53) - domain name
+ ftp(21) - file transfer
+ There are two types of sockets:
+ stream socket(sock_stream):used for tcp connections,which provide a reliable,ordered and error-
+ checked delivery of data.
+ datagram socket(sock_DGRAM):used for udp connections,which provide a 
+ connectionless,unreliable service for sending short messages.
+ address families such as AF_INET:FOR  ipv4 address:
+ AF_INET6: for  ipv6 addreses:
+ most websites use utf-8 encoding
+ in python 3 all strings are internally unicode/
+ when we talk to a network resources using sockets or talk toa  database we have to encode and 
+ decode data(usually to utf - 8)
+ web scrapping is a program or script to extract information or data from a web pages.
+ the tcp/ip gives us pipes/sockets between applications.
+ we designed applications protocols to make use of these pipes.
+ protocols like http(80) and https(443) are used to gain information between socket n server.
+python has good support for sockets , html , and http parsing.
+
+'///////////////////////////// basic of networks /////////////////////////////////////////'
+'every node in computer network is identified with the help of ip address'''
+''' fault tolerance , scalability , quality of service , security
+are the characteristicsof network'''
+'''flow of data over a network between two computer or nodes via cable is called data flow'''
+'''data can flow in three forms such as simplex , duplex , fullduplex'''
+'''[1] in simplex data flow from one node to another via cable such as keyboard to monitor 
+where the keyboard sends asks for the data to monitor '''
+'''[2] in a halfduplex data flows in both directions but not at the same time.
+if one device is sending, the other can nly receive, and vice-versa.
+e.g.- walkie-talkie
+[3] in fullduplex data flows unidirectional simutaneously at the same time.
+e.g. telephone line '''
+'////// BASIC COMMANDS NETWORK : ipconfig , ipconfig/all , nslookup , ping ,////'''
+'''NSLOOKUP IS A NETWORK ADMINISTRATION COMMAND-LINE TOOL FOR QUERING THE DOMAIN NAME 
+SYSTEM TO OBTAIN DOMAIN NAME OR IP ADRESS MAPPING, OR OTHER DNS RECORDS.'''
+'''PING IS A COMPUTER NETWORK ADMINISTRATION UTILITY USED TO TEST THE REACHABILITY OF A HOST
+ON AN INTERNET PROTOCOL (IP) NETWORK.'''
+'''TRACERT(TRACEROUTE) ARE COMPUTER NETWORK DIAGNOSTIC COMMANDS FOR DISPLAYING POSSIBLE
+ROUTES(PATHS) AND MEASURE TRANSIT DELAYS OF PACKES 
+ACROSS AN INTERNET PROTOCOL (IP) NETWORK.'''
+'''NETSTAT(NETWORK STATISTICS) IS A COMMAND-LINE NETWORK UTILITY THAT DISPLAYS NETWOKRK
+CONNECTIONS STATS.'''
+''' a computer network is aset of nodes connected by communication links:'''
+''' a node can be a computer, printer or any other device capable of '''
+''' sending/receiging data test_generated_op_names'''
+''' by other nodes in the network'''
+'''A MAC ADDRESSS SHORT FOR MEDIA ACCESS CONTROL ADDRESS IS A UNIQUE IDENTIFIER ASSIGNED
+TO A NETWORK INTERFACE CONTROLLER(NIC) FOR USE IN NETWORK COMMUNICATION.
+EACH MAC ADDRESS IS UNIQUE TO THE NETWORK DEVICE IT IS ASSIGNED TO,ENSURING THAT NO TWO 
+DEVICES HAVE THE SAME ADDRESS.
+
+A MAC ADDRESS IS TYPICALLY REPRESENTED AS A SERIES OF SIX PAIRS OF HEXADECIMAL DIGITS, 
+SEPARATED BY COLONS OR HYPENS (E.G.00:1A:2B:3C:4E:4D)
+IT IS USE TO IDENTIFY DEVICES ON A LOCAL NETWORK ,ENABLING COMMUNICATION BETWEEN DEVICES
+ON THE SAME NETWORK SEGMENT.
+MAC ADDRESS OPERATE AT THE DATA LINK LAYER(LAYER 2 ) OF THE OSI MODEL.
+/////////////////////////OSI REFERENCE MODEL ///////////////////////////
+
+APPLICATION LAYER           -   HTTP,DNS,DHCP,FTP           -     APPLICATION
+PRESENTATION LAYER          -   ---SAME----                 -     --SAME--
+SESSION LAYER               -   ---SAME----                 -     --SAME--
+:= APPLICATION REPRESNTS DATA TO THE USER, PLUS ENCODING AND DIALOG CONTROL
+
+TRANSPORT LAYER             -   TCP/UDP                     -     TRANSPORT 
+:= TRANSPORT SUPPORT COMMUNICATIN BETWEEN DIVERSE DEVICES ACROSS DIVERSE NETWORKS.
+NETWORK LAYER               -   IPV4/IPV6(ICMPV4,ICMPV6)    -     INTERNET
+:= INTERNET DETERMINES TE BEST PATH THROUGH THE NETWORK.
+
+DATA LINK LAYER             -   PPP,FRAME RELAY,ETHERNET    -     NETWORK ACCESS
+PHYSICAL LAYER              -   -------------------         -     -------------- 
+:= NETWORK ACCESS CONTROLS THE HARDWARE DEVICES AND MEDIA THAT MAKE UP THE NETWORK.'''
+'''xml(extensible markup language) its primary purpose is to help information systems 
+share structureddata.it started as a simplified subset of the standard generalized 
+markup language(sgml),and is designed to be relatively human-legible.
+Tags indicate the begining and ending of xml'''
+'///////////////////////////////////////////////////////////////////////////////'
+SSL - SECURE SOCKET LAYER AND TLS - TRANSPORT LAYER SECURITY ARE CRYPTOGRAPHIC DESINGED TO PROVIDE SECURE COMMUNICATION OVER A COMPUTER NETWORK.
+THEY ARE WIDELY USED TO SECURE DATA TRANSMITTED OVER THE INTERNET,SUCH AS IN WEB BROWSING ,EMAIL AND ISNTANT MESSAGING .
+WE USE TSL INSTEAD OF SSL FOR DATA SECURITY /.
+a socket is defined as an endpoint for communication 
+a pair of processes communicatin over a network employee a pair of sockets-one  for each process 
+a socket is identified by an ip address concatenated with a port number .
+the server waits for incoming client requests by listening to specified port.Once a request is received, the server accepts a 
+connection from the client socket to complete the connection.
+
+servers implementing specific services (succh as telnet,ftp,and http) listen to well-known ports
+a telnet server listens to port 23 , an ftp server listens to por 21 , and web or http,server listens to port 80
+All ports below 1024 are considered well known; we can use them to implement standard services
+
+AF_INET stands for address family -internet 
+It is used to specify the type of addresses that your socket can communicate with (in this case ipv4 addresses) 
+when you create a socket using AF_INET,it means you're working with ipv4 address 
+
+SOCK_STREAM is used to specify the type of socket.
+it indicated that the socket is a stream socket,which means it provides a reliable two-way ,connection based byte stream.
+This is TYPICALLY used for tcp(transmission control protocol) connections, which ensure that data is delivered in the 
+same order it was sent and without errors.
+
+COMMON ADDRESSS FAMILY ARE :
+AF_INET FOR IPV4 ADDRESS 
+AF_INET6 FOR IPV6 ADDRESS 
+AF_UNIX FOR COMMUNICATING WITHIN THE SAME HOST(UNIX DOMAIN SOCKETS).
+EXAMPLE SOCKET.SOCKET(SOCKET.AF_UNIX,SOCKET.SOCK_STREAM)
+
+UTF - 8 IS A CHARACTER ENCODING STANDARD THAT IS USED TO REPRESENT TEXT IN COmPUTERS AND OTHER DEVICES.it is one  OF THE 
+MOST WIDELY USED ENCODING FORMATS ON THE WEB AND IN SOFTWARE APPLICATIONS.
+IT USES ONE TO FOUR BYTES TO REPRESENT EACH CHAREACTER.THIS ALLOWS IT TO EFFICIENTLY ENCODE A WIDE RANGE OF CHARACTERS,INCLUDING THOSE FROM 
+DIFFERENT LANGUAGES N SYMBOLS SETS.
+
+UTF - 8 IS BACKWARD COMPATIBLE WITH ASCII,MEANING THAT ANY VALID ASCII TEXT IS ALSO VALID UTF-8 TEXT.
+IT IS USED IN VARIOUS APPLICATION ,INCLUDING WEB PAGES,EMAIL,AND FILE STORAGE.most websites use utf-8 encoding to ensure 
+that text is displayed correctly across different browsers and devices.
+
+WEB SCRAPPING IS A PROGRAM OR SCRIPT PRETENDS TO BE A BROWSER AND RETIREVES WEB PAGES, LOOKS AT THOSE WEB PAGES, 
+EXTREACTS INFORMATION , AND THEN LOOKS AT MORE WEB PAGES/
+SCRAPPING IS USED TO PULL DATA PARTICULARLY SOCIAL DATA WHO LINKS TO WHO .
+TO GET YOUR OWN DATA BACK OUT OF SOME SYSTEM THAT HAS NO EXPOT CAPABILITY.
+TO MONITOR A SITE FOR NEW INFORMATION 
+TO SPIDER THE WEB TO MAKE A DATABASE FOR A SEARCH ENGINE
+
+web_crawler is a computer program that browses the world wide web in a methodical, automated manner.Web crawlers are mainly used to 
+create a copy of all the visited pages for later processing by a search engine that wil index the downloades pages to provide fast searches.
+                                    
+
+                                    Web Crawling Policy 
+                            A selection policy  that states which pages to download,
+                            A re-visit policy that states when to check for changes to the pages,
+                            A politeness policy that states how to avoid overloading web sites,and 
+                            A prallelization policy that states how to coordinate distributed web
+                            crawlers.
+                        
+                                   SEARCH INDEXING 
+                            SEARCH ENGINE INDEXING COLLECTS, PARSES AND STORES DATA TO FACILITATE FAST AND ACCURATE
+                            INFORMATION RETRIEVAL.THE PURPPOSE OF STORING AN INDEX IS TO OPTIMIZE SPEED AND 
+                            PERFORMANCE 
+                            IN FINDING RELEVANT DOCUMENTS FOR A SEARCH QUERY.WITHOUT AN INDEX,THE SEARCH ENGINE WOULD SCRAPPINGEVERY DOCUMENT
+                            IN THE CORPUS,WHICH WOULD REQUIRE CONSIDERABLE TIME AND COMPUTING POWER.
+
+
+                          NETWORKING AND COMMUNICATION 
+       
+       THE FIELF OF NETWORKING AND COMMUNICATION INCLUDES THE ANALYSIS ,DESIGN IMPLEMENTATION AND USE OF LOCAL,
+       WIDE AREA AND MOBILE NETWORKS THAT LINK COMPUTERS TOGETHER. THE INTERNET ITSELF IS A NETWORK THAT MAKES IT 
+       FEASIBLE FOR NERALY ALL COMPUTERS IN TH WORLD TO COMMUNICATE.
+       
+       A COMPUTER NETWORK LINKS COMPUTERS TOGETHER VIA A COMBINATIN OF INFRARED LIGHT SIGNALS,RADIO WAVE TRANSMISSIONS,
+       TELEPHONE LINE,TELEVISION CABLES AND SATELLITE LINKS. THE CHALLENGE FOR COMPUTER SCIENTISTS HAS 
+       BEEN TO DEVELOP PROTOCOLS (STANDARDIZED RULES FOR THE FORMAT AND EXCHANGE OF MESSAGES )THAT ALLOW 
+       PROCESSES RUNNING ON HOST COMPUTERS TO INTERPRET THE SIGNALS THEY RECEIVE AND TO ENGAGE IN MEANINGFUL 
+       CONVERSATIONS IN ORDER TO ACCOMPLISH TASKS ON BEHALF OF USERS. NETWORK PROTOCOLS ALSO INCLUDE 
+       FLOW CONTROL, WHICH KEEPS A DATA SENDER FROM SWAMPING A RECEIVER  WITH MESSAGES THAT IT HAS NO TIME TO 
+       PROCESS OR SPACE TO STORE, AND ERROR CONTRO, WHICH INVOLVES TRANSMISSION ERROR DETECTION AND 
+       AUTOMATIC RESENDING OF MESSAGES TO CORRECT SUCH ERRORS.

@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "python",
+			"path": "D:/park.py admin/py/myenv/python"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "py"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
+	}
+}

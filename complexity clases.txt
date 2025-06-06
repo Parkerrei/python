@@ -1,0 +1,7 @@
+o(1) denote constant running time 
+o(logn) denotes logarithmic running time 
+o(n) denotes linear running time 
+o(n log n) denoted log-linear running time 
+o(n ^ 2) denote polynomial running time(k is a constant ) 
+O(2 ^ n ) denotes exponential running time (n is a constant being raised to a power 
+based on size of)

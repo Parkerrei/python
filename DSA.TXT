@@ -1,0 +1,39 @@
+ALGORITHM MEANS A PROCESS OR SET OF RULES TO BE FOLLOWED IN CALCULATIONS OR OTHER PROBLEM-SOLVING OPERATIONS.THEREFORE ALGORITHM REFERS TO A SET OF RULES/INSTRUCTIONS 
+THAT STEP-BY-STEP DEFINE HOW A WORK IS TO BE EXECUTED UPON IN ORDER TO GET THE EXPECTED RESULT.
+
+PRIORI ANALYSIS MEANS CHECKING THE ALGORITHM BEFORE ITS IMPLEMENTATION . IN THIS ,THE ALGORITHM IS CHECKED WHEN IT IS WRITTEN IN THE FORM OF THEORETICAL STEPS.
+THIS EFFICIENCY OF AN ALGORITHM IS MEASURED BY ASSUMING THAT ALL OTHER FACTORS,FOR EXAMPLE ,PROCESSOR SPEED ARE CONSTANT AND HAVE NO EFFECT 
+ON THE IMPLEMENTATION. THIS IS DONE USUALLY BY THE ALGORITHM DESIGNER. IT SI IN THIS METHOD, THAT THE  ALGORITHM COMPLEXITY IS DETERMINED.
+
+POSTERIOR ANALYSIS MEANS CHECKING THE ALGORITHM AFTER ITS IMPLEMENTATION.IN THIS , THE ALGORITHM IS CHECKED BY IMPLEMENTING IT IN ANY PROGRAMMING LANGUAGE AND EXECUTING IT. THIS ANALYSIS HELPLS 
+TO GET THE ACTUAL AND REAL ANALYSIS REPORT ABOUT CORRECTNESS,SPACE REQUIRED ,TIME CONSUMED ETX.
+
+TIME FACTOR IS MEASURED BY COUNTING THE NUMBER OF KEY OPERATIONS SUCH AS COMPARISIONS IN THE SORTING ALGORITHM. 
+
+SPACE FACTOR IS MEASURED BY COUNTING THE MAXIMUM MEMORY SPACE REQUIRED BY THE ALGORITHM.
+
+SPACE COMPLEXITY OF AN ALGORITHM REFERS TO THE AMOUNT OF MEMORY THAT THIS ALGORITHM REQUIRES  TO EXECUTE AND GET THE RESULT.
+THIS CAN BE FOR INPUTS, TEMPORARY OPERATIONS OR OUTPUTS.
+
+THE FIRST AND FOREMOST THING IS DIVIDING THE TOTAL PROCEDURE INTO LITTLE PIECES WHICH NEED TO BE DONE 
+SEQUENTIALLY.THE COMPLETE PROCESS TO LEARN DSA FROM SCREATCH CAN BE BROKEN INTO 5 PARTS:
+1) LEARNING ATLEAST ONE PROGRAMMING LANGUAGE 
+2) LEARNING ABOUT TIME AND SPACE COMPLEXITIES
+3) LEARN DATA STRUCTURE AND ALGORITHMS 
+4) SOLVE THE BEST QUALITY PROBLEMS ON GFG PRACTISE 
+5) COMPETE IN GEEK FOR GEEK WEEKLY CODING CONTEST AND GFG JOB-A-THON.
+
+ANALYSIS OF ALGORITHM -----
+ANALYSIS OF ALGORITHM IS A FUNDAMENTAL ASPECTS OF COMPUTER SCIENCE THAT INVOLVES EVALUATING PERFORMANCE 
+OF ALGORITHMS AND PROGRAMS.EFFICIENCY IS MEASURED IN TERMS OF TIME AND SPACE. 
+
+WHY IS ANALYSIS OF ALGORITHM-----
+Why is Performance of Algorithms Important ? There are many important things that should be taken care of, like user-friendliness, modularity, security, maintainability, etc. Why worry about performance?  The answer to this is simple, we can have all the above things only if we have performance. So performance is like currency through which we can buy all the above things. Another reason for studying performance is – speed is fun! To summarize, performance == scale. Imagine a text editor that can load 1000 pages, but can spell check 1 page per minute OR an image editor that takes 1 hour to rotate your image 90 degrees left OR … you get it. If a software feature can not cope with the scale of tasks users need to perform – it is as good as dead. 
+
+Algorithm analysis is an important part of computational complexity theory, which provides theoretical estimation for the required resources of an algorithm to solve a specific computational problem. Analysis of algorithms is the determination of the amount of time and space resources required to execute it.
+
+Why Analysis of Algorithms is important?
+
+To predict the behavior of an algorithm for large inputs (Scalable Software).
+It is much more convenient to have simple measures for the efficiency of an algorithm than to implement the algorithm and test the efficiency every time a certain parameter in the underlying computer system changes.
+More importantly, by analyzing different algorithms, we can compare them to determine the best one for our purpose.

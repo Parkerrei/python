@@ -1,0 +1,26 @@
+%b is the month abbreviation 
+%I is for 12 hour clock as zero padded  decimal number.
+%B is the full month name 
+%y is two digit year 
+%a is the day of the week abbreviated 
+%A is the day of the week 
+%H is for hour 
+%M is for minute (small letter m is for month)
+%S is for second
+%p is for pm
+datetime.datetime.now() or today() to get the current date and time in python .
+strftime() to format date and time in python.
+strptime() used to parse user inputed dated and manipulate that date
+pythons datetime module can handle time zones using the ptz library.we need to install it .
+timedelta is the difference between two dates u can either use timedelta() which takes time parameters 
+such as hrs ,minutes,seconds,millisecond,microsecond,days,weeks .
+time delta is used to count duration between different time in space. 
+RELATIVEDELTA CLASS FROM THE DELTAUTIL MODULE IN PYTHON IS A POWERFUL TOOL FOR PERFORMING COMPLEX DATE 
+MANIPULATIONS.
+KEY FEATURES OF RELATIVEDELTA ARE:
+1) FLEXIBLE DATE ARITHMETHIC : UNLIKE timedelta, WHICH ONLY SUPPORTS FIXED INTERVALS (DAYS,SECONDS ETC) 
+,RELATIVEDELTAALLOWS FOR MORE FLEXIBLE DATE MANIPULATIONS,INCLUDING MONTHS AND YEAR.
+2) HANDLING END OF MONTH SCENARIOS : RELATIVEDELTA CAN HANDLE END OF MONTH SCENARIOS GRACEFULLY.
+FOR EXAMPLE, ADDING ONE MONTH TO JANUARY 31ST WILL RESULT IN FEBRUARY 28 OR 29,DEPENDING ON WHETHER IT'S A LEAP YEAR.
+3) ABSOLUTE AND RELATIVE CHANGES: YOU CAN SPECIFY BOTH ABSOLUTE AND RELATIVE CHANGES TO DATES. FOR EXAMPLE, YOU 
+CAN SET THE DAY OF THE MONTH TO A SPECIFIC VALUE OR ADD A CERTAIN NUMBER OF DAYS.

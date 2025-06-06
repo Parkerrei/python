@@ -1,0 +1,40 @@
+a text file is  a sequencee of string or information
+c:/drive are called home directory where every files and folders of default operating apps 
+are located
+Path.home() is used to get accesed to home directory of a computer/
+os.getcwd() is used to get accesed to current files in directory/
+absoulute path and relative path are two ways to specify a file path
+single dot is for ''this directory'' while double dots used for ''parent folder''
+types of all files:
+text files: .txt ,.docx,.log etc.
+"😍"binary files:.mp4 , .mov , .png , .jpeg etc.
+'x' create new file and open it for writing
+'b' is for binary mode
+'t' is for text mode
+'+' open a disk file for updating (reading and writing)
+'a' open for writing ,appending to end of the file if it exist
+'a+' always append to end  or let u write in new line 
+readline is used to read particular line of txt or fils.
+with open('mbox-short.txt', 'r') as files:
+'w' is used to overwrite and delete previous data in a text file,
+--- it is also use to create new text file or folder.
+'r+' used to read and write simultaniously its  overwrite at the first place.
+--- it creates an automatic iterators or pointer from first position
+'w+' used to write and read but it deletes files when in write mode
+to remove a file we import a built in module called os module 
+
+THE SHUTIL MODULE IN PYTHON PROVIDES A HIGHER-LEVEL INTERFACE FOR FILE OPERATIONS COMPARED TO THE OS MODULE.
+IT INCLUDES FUNCTIONS FOR COPYIGN ,MOVING AND REMOVING FILES AND DIRECTORIES AMONG OTHER TAKS.
+WHILE SHUTIL IS NOT A PART OF THE OS MODULE,IT COMPLEMENTS IT BY OFFERING MORE ADVANCED FILE OPERATIONS.
+THE SHUTIL MODULE IS A POWERFUL TOOL FOR PERFORMING HIGH-LEVEL FILE OPERATIONS IN PYTHON.IT IS SEPERATE
+FROM THE OS MODULE BUT OFTEN USED IN CONJUNCTION WITH IT TO HANDLE MORE COMPLEX FILE AND DIRECTORY MANIPULATIONS.
+
+FUNCTIONS OF SHUTIL MODULE :
+COPYING  FILE AND DIRECOTRIES --- SHUTIL.COPY(SRC,DST):COPIES A FILE FROM (SRC TO DST).
+SHUTIL.COPYTREE(SRC,DST):RECURSIVELY COPIES AN ENTIRE DIRECTORY TREE FROM SRC TO DST.
+
+MOVE FILES AND DIRECTORIES:
+SHUTIL.RMTREE(PATH):MOVES A FILES OR DIRECTORY FROM SRC TO DST.
+
+ARCHIVING :
+SHUTIL.MAKE_ARCHIVE(BASE_NAME,FORMAT,ROOT_DIR):CREATES AND ARCHIVE FILE (E.G.,ZIP OR TAR) FROM A DIRECTORY.

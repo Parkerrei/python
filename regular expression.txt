@@ -1,0 +1,40 @@
+In computing , a regular expression, also referred to as 'regex' or 'regexp', provide
+a Concise and flexible means for matching strings of text, such as particular 
+characters, words or pattern of characters. 
+A regular expression is written in a formal language that 
+can be interpreted by a regular expression processor//
+--re.search() checks entire string to find the first occurence of a passed 
+--string./useful when 
+--need to search for the first match anywhere in string/
+--re.match checks for a match only at the begining of the string/it is ideal 
+--for scenarios where
+u need to check if a string start with a specific pattern
+if we actually want the matching strings to be extracted ,we use re.findall() 
+to use regex(regular expression) we import it by using import re
+\d is used to check for digits in a sequence
+we can check for specified strings by passing the name as an expression
+^ means search for first string starts with.
+$ means string before dollar sign can be used to check for strings that ends with specific char
+\d is used to check for digits among strings 
+\D not a decimal digit
+\S not a whitespace character
+\s is used to check for white spaces among strings
+\W not a word character
+\w checks for lower char ,upper , and digits among strings or without strings if digits.
+^\w\w\w\w\s checks for starting strings with four letters followed by space.
+re.IGNORCASE OR re.I (it makes the pattern case sensitive)
+re.MULTILINE OR re.M (chaneges the behaviour of ^ and $ to match
+the start and end of each line,rather than the start and end of entire string)
+re.DOTALL or re.S(makes the dot match any character,including newline characters.)
+
+REGEX QUANTIFIERS
+[aeiou]{2} this expression checks for strings that contain two vowels .
+^\w{7}$ checks for string specificaly with 7 characters not seperated by space only.
+\w{7} this expression checks for string with 7 characters seperated by white spaces only.
+a|b matches either a or b
+(abc) matches the exact sequence 'abc'
+{n} matches exactly n occurence of the preceding element
+?:matches either 0 or 1 of the preceding element
++:matches 1 or more of the preceding element//(a+ matches 'a','aa',etc)//
+*:matches 0 or more of the preceding element//(a* matches 'a','aa',etc)//
+.:matches any single character except newline//(a.b matches 'aab','acb',etc)//
